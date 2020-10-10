@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+*::selection {
+  background-color: rgb(145, 212, 243);
+  color: white;
+}
+
+body {
+  padding: 0px 50px 0px 50px;
+  font-family: "Architects Daughter", cursive;
+}
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+}
+.page-header {
+  color: rgb(160, 218, 252);
+  text-align: center;
+  letter-spacing: 0.3rem;
+  text-shadow: 2px 2px 1px rgb(9, 61, 61);
+  padding: 20px 12px;
+}
+ul {
+  list-style-type: none;
+  width: max-content;
+  padding: 10px;
+  margin: 20px 0px 20px 0px;
+  cursor: progress;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+a:hover {
+  transform: scale(1.2);
+}
+
+.image-wrap {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: -50px;
+}
+.image-wrap img {
+  max-width: 100%;
+  max-height: 100vh;
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+  .image-wrap {
+    margin-left: -50px;
+  }
+  .image-wrap img {
+    width: 100%;
+  }
+}
