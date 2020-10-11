@@ -3,29 +3,69 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Sofia Mikhalova" />
+    <meta name="description" content="This is a page about kalimbas" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <title>sofi</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1 class="page-header">Kalimba is cool</h1>
-
-    <div class="content">
-      <div class="description">
-        <ul>
-          Kalimba types:
-          <li>bear kalimba</li>
-          <li>cat kalimba</li>
-        </ul>
-        <div>
-          <a href="https://www.kalimbatabs.net/" target="”_blank”"
-            >Kalimba Tabs</a
-          >
-        </div>
+    <div class="navBarBox">
+      <div class="logo-wrap">
+        <img class="logo" src="kalimba.svg" alt="kalimba-logo" />
       </div>
-
-      <div class="image-wrap">
-        <img src="kalimba.webp" alt="kalimba pic" />
+      <ul class="links">
+        <li><a class="navLink" href="#">About</a></li>
+        <li><a class="navLink" href="#">Shop</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
       </div>
     </div>
+    <div class="main">
+      <h1 class="page-header">Kalimba is cool</h1>
+
+      <div class="kalimba-container">
+        <div class="description">
+          <ul>
+            Kalimba type:
+            <li>cat kalimba</li>
+          </ul>
+          <div>
+            <a
+              class="text-link"
+              href="https://www.kalimbatabs.net/"
+              target="”_blank”"
+              >Kalimba Tabs</a
+            >
+          </div>
+        </div>
+        <div class="image-wrap">
+          <img src="kalimba.webp" alt="kalimba pic" />
+        </div>
+      </div>
+      <div class="kalimba-container">
+        <div class="description">
+          <ul>
+            Kalimba type:
+            <li>bear kalimba</li>
+          </ul>
+          <div>
+            <a
+              class="text-link"
+              href="https://www.kalimbatabs.net/"
+              target="”_blank”"
+              >Kalimba Tabs</a
+            >
+          </div>
+        </div>
+        <div class="image-wrap">
+          <img src="bear_kalimba.jpg" alt="kalimba pic" />
+        </div>
+      </div>
+    </div>
+    <script src="burger.js"></script>
   </body>
 </html>
